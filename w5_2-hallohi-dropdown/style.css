@@ -4,14 +4,14 @@ padding: 0;
 box-sizing: border-box;
 }
 
-ul {
+ul { display: flex;
 list-style-type: none;
 background-color: blueviolet;
 overflow: hidden;
 }
 
 li {
-float: left;
+   
 }
 
 li a {
@@ -24,7 +24,7 @@ display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
+   display:none;
     border-bottom-right-radius: 150px;
 position: absolute;
 background-color: blueviolet;
@@ -38,21 +38,23 @@ z-index: 1;
 .dropdown-content a {
     color: white;
     padding: 0.8rem 1rem;
-    display: block;
+    display: flex; 
     text-align: left;
 }
 
 .dropdown:hover .dropdown-content {
-display: block;
+display: flex;
+flex-direction: column;
 }
 
 .dropdown-content .hulp{
-display: block;
+display: flex;
 
 }
 
 .dropdown-content:hover .hulp{
-display: block;
+display: flex;
+flex-direction: column;
 color: black;
 }
 
